@@ -1,12 +1,13 @@
+import 'package:ecattle/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
   static Route<dynamic> generatorRoute(RouteSettings settings) {
-    final args = settings.arguments;
+    // final args = settings.arguments;
 
     switch (settings.name) {
-      // case '/addProduct':
-      //   return MaterialPageRoute(builder: (_) => const AddProduct());
+      case '/':
+        return MaterialPageRoute(builder: (_) => const HomePage());
       default:
         return _errorRoute();
     }
